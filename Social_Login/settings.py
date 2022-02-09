@@ -14,6 +14,9 @@ from pathlib import Path
 import os
 import environ
 
+# user model 등록
+AUTH_USER_MODEL = 'kakaoAPI.User'
+
 env = environ.Env(
     DEBUG=(bool, False)
 )
@@ -45,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'kakaoAPI',
 ]
 
 MIDDLEWARE = [
